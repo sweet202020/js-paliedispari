@@ -15,9 +15,19 @@ const str = reverse.join('')
 console.log(str)
 
 //if per confrontare i due valori
-if (str==userWord){
+//utilizzo la funzione
+function palindroma(){
+    if (str==userWord){
+        /* console.log('la parola è palindroma') */
+        return true
+    }/* else{
+        console.log('la parola non è palindroma');
+    }
+ */
+    return false
+}
+if (palindroma(userWord)){
     console.log('la parola è palindroma')
 }else{
     console.log('la parola non è palindroma');
 }
-
